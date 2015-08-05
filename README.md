@@ -2,8 +2,8 @@
 ###math, statistics & probability
 * nonLinSolve.m - solves a set of non-linear equations (gradient free)
 * isUnitCirclePolynomial.m - test if the roots of a given polynomial lie inside the unit circle
-\math, statistics & probability\stabilizePoly.m - reflect polynomial unstable roots inside the unit circle (make a polynomial stable)
-\math, statistics & probability\danChol.m - performs the cholesky factorization for positive semi definite matrices
+* \math, statistics & probability\stabilizePoly.m - reflect polynomial unstable roots inside the unit circle (make a polynomial stable)
+* \math, statistics & probability\danChol.m - performs the cholesky factorization for positive semi definite matrices
 \math, statistics & probability\danQR.m - performs a generalized ("partial") QR factorization
 \math, statistics & probability\danDetrend.m - removes any order of trend from a given observation (make it wide sense stationary)
 \math, statistics & probability\polygonMean.m - calculate the mean polygon of several 2D polygons
