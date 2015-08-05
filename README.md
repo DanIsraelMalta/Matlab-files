@@ -1,7 +1,7 @@
-#general mathematical & statistical functions:
----------------------------------------------
-\math, statistics & probability\nonLinSolve.m - solves a set of non-linear equations (gradient free)
-\math, statistics & probability\isUnitCirclePolynomial.m - test if the roots of a given polynomial lie inside the unit circle
+###general mathematical & statistical functions:
+###math, statistics & probability
+* nonLinSolve.m - solves a set of non-linear equations (gradient free)
+* isUnitCirclePolynomial.m - test if the roots of a given polynomial lie inside the unit circle
 \math, statistics & probability\stabilizePoly.m - reflect polynomial unstable roots inside the unit circle (make a polynomial stable)
 \math, statistics & probability\danChol.m - performs the cholesky factorization for positive semi definite matrices
 \math, statistics & probability\danQR.m - performs a generalized ("partial") QR factorization
