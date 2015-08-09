@@ -1,8 +1,8 @@
 %{
-% OptimalFilter returns an direct form optimal filter (of any order)
+% OptimalFilter returns a direct form optimal filter (of any order)
 % coefficients for low pass FIR filters, based upon Durrani-Chapman method
 %
-% note that the algorithm suffers from serious numerical problems, so I
+% note that the original algorithm suffers from serious numerical problems, so I
 % had to scale things up/down and change various calculations to accommodate them.
 %
 % order - filter order (specify 1 for IIR filter)
