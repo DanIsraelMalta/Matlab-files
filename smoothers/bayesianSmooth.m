@@ -4,7 +4,7 @@
 % aposteriori pdf! this should, in theory and for non linear observations,
 % perform much better then any optimal-linear or  maxmim-likelihhood based smoother.
 %
-% in theory, this smoother should give good results in environments with signal-to-noise ratio of 0.3 (equivaent to -10db)!!!
+% in theory, this smoother should give good results in environments with signal-to-noise ratio of 0.3 (equivaent to -10db).
 %
 % bayesianSmooth minimizes the same cost function like directSmooth.
 %
