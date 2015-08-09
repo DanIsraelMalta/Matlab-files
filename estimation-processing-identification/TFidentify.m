@@ -1,6 +1,6 @@
 %{
-% TFidentify estimated the transfer function (numerator, denominator) of a given frequency response.
-% TFidentify fit's a real transfer function.
+% TFidentify estimates the transfer function (numerator, denominator) of a given frequency response.
+% TFidentify fit's a real (not complex) transfer function.
 % TFidentify constraints the solution such that the denominator is stable.
 %
 % TFidentify requires stabilizePoly.m.
