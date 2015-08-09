@@ -1,5 +1,5 @@
 %{
-% polydeg find's the optimal degree for polynomial fitting,
+% optimalPoly find's the optimal degree for polynomial fitting,
 % according to Akaike's information criteria (same as Bayes criteria, since we don't have prior PDF)
 %
 % x, y - vectors of {x, y} data
@@ -30,7 +30,7 @@ ys = ones(N, 1) * p;
 AIC = 2 + N * (log(2 * pi * sum((ys-y).^2) / N) + 1) + 4 / (N-2);
 
 % search the optimal degree minimizing the Akaike's information criterion
-% at least 3 steps are needed to take to remove "AIC noise" and ensure
+% at least 3 steps are needed to remove "AIC noise" and ensure
 % non local minimum
 p = zeros(2,2);
 p(1,2) = mean(x);
