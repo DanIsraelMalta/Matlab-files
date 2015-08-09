@@ -1,5 +1,5 @@
 %{
-% A specially designed smoother to suppress derivative  by adjusting the
+% A specially designed smoother to suppress derivative by adjusting the
 % impulse transfer function
 %
 % x         = obseravation
