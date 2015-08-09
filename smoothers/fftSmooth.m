@@ -1,6 +1,6 @@
 %{
 % fftSmooth performs a fast and efficient robust smoothing by minimizing
-% the general cross validation function, in the frequency response!
+% the general cross validation function, in the frequency response.
 %
 % x - vector to be smoothed
 % y - smoothed x
