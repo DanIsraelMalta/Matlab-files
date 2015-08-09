@@ -5,7 +5,7 @@
 %
 % unlike the sampled variance calculation, which maximizes the maxmimum
 % likelihood, this algorithm  maximizes the aposteriory probability,
-% thus it is locally and asymptotically unbiased! 
+% thus it is locally and asymptotically unbiased.
 %
 % y - observation series
 % noisevar - estimated noise variance
