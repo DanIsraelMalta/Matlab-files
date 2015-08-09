@@ -1,6 +1,6 @@
 %{
-% modelReduction performs model reduction by removes fast dynamics while maintaining static gain.
-% modelReduction is different then matlab sminreal, since it does not look
+% modelReduction performs model reduction by removing fast dynamics while maintaining static gain.
+% modelReduction is different then matlab sminreal, since it does not search
 % for non-minimal states / zero enteries in A,B & C matrix or zero-pole
 % cancellation.
 %
