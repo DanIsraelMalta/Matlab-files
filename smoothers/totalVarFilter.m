@@ -1,7 +1,6 @@
 %{
 % totalVarFilter performs the total variance filtering schema
-% this smoother is especially usefull for corrupted piecewise linear 
-% polynominal data corrupted by noise.
+% this smoother is especially usefull for piecewise linear / polynominal data corrupted by noise.
 %
 % x - signal
 % lambda - smoothign parameter (larger lambda - larger smooth)
