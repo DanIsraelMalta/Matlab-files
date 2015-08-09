@@ -46,7 +46,7 @@
 * optimalPoly.m - automatically find's a polynomial optimal degree (for polynomial fitting; maximum likelihood style)
 * orthogonalPolyFit.m - fit's an orthogonal polynomial (not linear least square polynomial)
 * loessFit.m - LOESS method regression
-* 
+
 ###math, statistics & probability
 * nonLinSolve.m - solves a set of non-linear equations (gradient free)
 * isUnitCirclePolynomial.m - test if the roots of a given polynomial lie inside the unit circle
