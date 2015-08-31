@@ -84,6 +84,7 @@
 * linDependent.m - finds linearly dependent columns in a given matrix
 * danBuffer.m - partitions a vector into matrix whos columns are non-overlapping data segments ("frames") of a given length
                (zero padded if necessary)
+* oneLinersLib.m - a library of usefull function handlers.
                        
 ###dedicated graphical functions:
 * qqplot.m - draws a quantile-quantile plot (theoretical quantiles are plotted against sample order statistics)
