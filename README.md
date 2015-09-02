@@ -18,6 +18,7 @@
 * autocorrExt.m - extends an autocorrelation sequence using levinson-durbin recrusion
 * firWiener.m - design a finite impulse response wiener filter using levinson-durbin
 * levinsonDurbin.m - performs the levinson-durbin recrusion
+* kmeans.m - perform the k-means clustering algorithm (using euclidean distance)
 
 ###smoothers
 * bayesianSmooth.m - smooths an observation by minimizing a quadratic cost function using the bayesian approach
