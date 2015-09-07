@@ -26,7 +26,7 @@ z = RTSsmooth(y, Q, R);
 
 % visualize
 figure;
-plot(t, y, 'r', t, sin(t), 'b', t, zt, 'k');
+plot(t, y, 'r', t, sin(t), 'b', t, z, 'k');
 legend('noisy observation', 'signal', 'smoothed observation');
 grid on;
 
