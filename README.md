@@ -31,6 +31,7 @@
 * RTSsmooth.m - rauch-tung-striebel smoother
 * estimateVar.m - estimate the variance of an additive noise to a given signal (then a perfect smoother can be created)
 * splineSmooth.m - smooths an observation using a spline
+* danSgolay.m - fast savitsky-golay smoothing for a uniformely spaced data set
 * bandPass.m - perfect band pass filter
 * loess2D.m - 2D LOESS method smoothing
 
