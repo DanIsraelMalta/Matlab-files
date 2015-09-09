@@ -76,6 +76,7 @@
 * jack.m - determine the bias and standard error of any statistical calculation performed on a given vector
 * bootstrap.m - determine the bootstrap percentile interval of any statistical calculation performed
                 on a given vector and in a given confidence interval
+* mutualInformtaion.m - estimate the mutual information between two vectors
 * distGen.m - generate random numbers according to a defined discrete probability distribution
 * distSample.m - generate a random sample from an arbitrary discrete/finite distribution
 * quat.m - returns the sampled quantiles of a given vector
