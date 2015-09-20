@@ -32,34 +32,22 @@ x3 = 2 + x;
 function [px, py, pxy, mi] = mutualInformtaion(x, y)
     % housekeeping
     n = length(x);
-    
+
     % bin'ing (space partition)
     numOfBins = max(floor(sqrt(n / 2)), 100);
     xyMin = min(min(x), min(y));
     xyMax = max(max(x), max(y));
     xyStep = (xyMax - xyMin) / numOfBins;
     edge = xyMin : xyStep : xyMax;
-    
-    % preallocation
-    nx = zeros(numOfBins + 1, 1);
-    px = nx;
-    ny = nx';
-    py = ny;
-    pxy = zeros(numOfBins + 1, 1);
-    
-    % columnize x and rowize y
-    x = x(:);
-    y = reshape(y, 1, n);
 
     % binned marginal probability density
-    nx = histc(x, edge);
-    ny = histc(y, edge);
-    px = nx(:) / n;
-    py = ny(:) / n;
-    
+    px = histc(x, edge) / n;
+    py = histc(y, edge) / n;
+
     % binned mutual probability density
+    pxy = zeros(1, numOfBins + 1);
     if min(x) < max(y) || min(y) < max(x)
-        mut = px & py;      
+        mut = px & py;
         pxy(mut) = min(px(mut), py(mut));
     end
 
