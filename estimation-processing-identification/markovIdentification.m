@@ -4,10 +4,10 @@
 %
 % markovIdentification assumes that:
 % 1) noise is additive and gaussian.
-% 2) the observationg are comprised of a single and constant prior probability distribution.
+% 2) the observations are comprised of a single and constant prior probability distribution.
 %
 % TODO:
-% current algorithm run for 6000 iterations (a value I so was good for very
+% current algorithm run for 6000 iterations (a value I saw was good for very
 % complex models), but this should be changed. I should add a convergence
 % criteria based on gelman-rubin method.
 %
@@ -23,18 +23,33 @@
 myfun=@(x,c) (exp(-x(1)*c)+x(2));
 
 % generate some noisy data
-true_x = [1;2];
-c=linspace(1,10,100);
-y=myfun(true_x,c) + .05*randn(1,100);
+true_x = [0.666; 3.777];
+xx=linspace(1,10,100);
+y=myfun(true_x,xx) + .05*randn(1,100);
 
 % estimate parameters
 x0=[5; 10];
 
-model = markovIdentification(y,x0,@(x)(myfun(x,c)), -100 * ones(size(x0)), 100 * ones(size(x0)));
+model = markovIdentification(y,x0,@(x)(myfun(x,xx)), -100 * ones(size(x0)), 100 * ones(size(x0)));
+err = abs(100 - [true_x(1) / mean(model(:,1)), true_x(2) / mean(model(:,2))] * 100);
 
-clc;
-disp(['model is:                          ', num2str(true_x(1)), ' + exp(', num2str(true_x(2)), ' * C)']);
-disp(['estimated model is: ', num2str(mean(model(:,1))), ' + exp(', num2str(mean(model(:,2))), ' * C)']);
+figure;
+subplot(2,2, [1 2]);
+plot(xx, y, 'r', xx, myfun(true_x, xx), 'b', xx, myfun([mean(model(:,1)); mean(model(:,2))], xx), 'k');
+grid on;
+legend('observation', ['truth: ', num2str(true_x(1)), ' + exp(', num2str(true_x(2)), ' * X)'],...
+                 ['estimated: ', num2str(mean(model(:,1))), ' + exp(', num2str(mean(model(:,2))), ' * X)']);
+title(['Model coefficients maximal error: ', num2str(max(err)), '[%]']);
+
+subplot(2,2,3);
+hist(model(:,1));
+title('Model parameter #1 estimated region');
+grid on;
+
+subplot(2,2,4);
+hist(model(:,2));
+title('Model parameter #2 estimated region');
+grid on;
 
 %
 % Dan I. Malta 2014
@@ -81,6 +96,7 @@ function model = markovIdentification(y, x0, func, lb, ub)
       end
     end
     
+    % acceptance / rejection
     keepp(i, :) = p;
     if rem(i, update) == 0
       prop = prop .* sqrt((1 + acc) ./ (1 + rej));
