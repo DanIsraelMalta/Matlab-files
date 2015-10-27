@@ -8,6 +8,7 @@
                      (time domain method; output is in kalman filter form)
 * markovIdentification.m - given static model and an output signal, estimate model parameters
                           (markov chain monte carlo method)
+* yuleWalkerAR.m - identify an autoregressive process (time domain method) using Yule-walker method.
 * OptimalFilter.m - designs an optimal direct form low pass filter
 * sTrans.m - implements stockwell frequency transform
 * wpsd.m - estimate a signal power spectral density using Welch's method
