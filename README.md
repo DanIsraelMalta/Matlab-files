@@ -20,6 +20,7 @@
 * firWiener.m - design a finite impulse response wiener filter using levinson-durbin
 * levinsonDurbin.m - performs the levinson-durbin recrusion
 * kmeans.m - perform the k-means clustering algorithm (using euclidean distance)
+* danGaussfir.m - returns the coeeficients of gaussian filter (good for pulse shaping)
 
 ###smoothers
 * bayesianSmooth.m - smooths an observation by minimizing a quadratic cost function using the bayesian approach
