@@ -82,6 +82,7 @@
 * distGen.m - generate random numbers according to a defined discrete probability distribution
 * distSample.m - generate a random sample from an arbitrary discrete/finite distribution
 * quat.m - returns the sampled quantiles of a given vector
+* logProb.m - returns the log(P(lo < Z < hi)), where Z~N(0,1), for the region [lo, hi]
 
 ###general
 * runFunc.m - implements a general moving window inlined scalar function upon a given vector
