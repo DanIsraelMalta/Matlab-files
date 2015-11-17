@@ -45,6 +45,7 @@
 * danDLQR.m - enhanced (more features) version of matlab's control toolbox function 'dlqr'
 * lowFreqPart.m - express a given transfer function as the sum of its low frequency dominant component
                   and an additive term, both in the form of partial fraction expression
+* danImpulse.m - matlab's control toolbox 'impulse' function for non LTI objects
 
 ###curve fitting & regression
 * optimalPoly.m - automatically find's a polynomial optimal degree (for polynomial fitting; maximum likelihood style)
@@ -91,6 +92,7 @@
 * linDependent.m - finds linearly dependent columns in a given matrix
 * danBuffer.m - partitions a vector into matrix whos columns are non-overlapping data segments ("frames") of a given length
                (zero padded if necessary)
+* logSpan.m - logarithmically grid's a given 1D region with required number of points
 * oneLinersLib.m - a library of usefull function handlers.
                        
 ###dedicated graphical functions:
