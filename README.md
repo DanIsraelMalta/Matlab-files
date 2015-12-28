@@ -93,7 +93,8 @@
 * danBuffer.m - partitions a vector into matrix whos columns are non-overlapping data segments ("frames") of a given length
                (zero padded if necessary)
 * logSpan.m - logarithmically grid's a given 1D region with required number of points
-* oneLinersLib.m - a library of usefull function handlers.
+* space.m - spacially distibuted grid of a given 1D region, relative to its edges or center.
+* oneLinersLib.m - a library of usefull function handlers
                        
 ###dedicated graphical functions:
 * qqplot.m - draws a quantile-quantile plot (theoretical quantiles are plotted against sample order statistics)
