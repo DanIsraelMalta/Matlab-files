@@ -65,6 +65,7 @@
 * nJacob.m - numericaly calculate the forward / centeral jacobian of a vectorial function
              (see \systems & simulation\danLinMod.m for usage of complex step jacobian calculation)
 * nGrad.m - numericaly calculate the forward / centeral gradient of a vectorial function
+* chebyQuad.m - 1D function integration utilizing chebyshev polynomial approximation
 * cloudAngle.m - estimate the main axis of scattered 2D data using principle component analysis
 * toBand.m - expand a given matrix to band matrix (where the given matrix is its operator)
 * envelope.m - retrieve the envelope of a given 2D data set
