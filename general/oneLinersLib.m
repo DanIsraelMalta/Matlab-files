@@ -22,6 +22,9 @@ y_diff2 = @(x, y) (pchip(0.5 * (x(1 : end - 1) + x(2 : end)), diff(y_diff1(x, y)
 %  use fftSmooth.m for smoothing purposes.
 y_smooth_angle = @(x) (atan2(fftSmooth(sin(x)), fftSmooth(cos(x))));
 
+% given frequency vector and sampling rate [sampling/sec], return the appropriate phase vector
+freq2phase = @(xi_freq, xi_rate) ([0, cumsum(xi_freq) / xi_rate]);
+
 % zero-phase filter function (api equal to filter function)
 y_filtftil = @(b, a, x) (fliplr(filter(b, a, fliplr(filter(b, a, z)))));
 
