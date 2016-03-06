@@ -1,5 +1,5 @@
 %{
-% danLinMod - linmon for any sort of non-simulink nonlinear dynamic system
+% danLinMod - linmod for any sort of non-simulink nonlinear dynamic system
 %
 % for a non linear dynamic system : {dx/dt = f(x, u), y = h(x, u)}
 % or a nonlinear discrete system: {x[k+1] = f(x[k], u[k]), y[k] = h(x[k], u[k])}
