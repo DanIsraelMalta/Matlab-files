@@ -73,6 +73,7 @@
 * erfir.m - calculate the error function of pure imaginary\real argument
 * partialFrac.m - factorize c(x)/(a(x)*b(x)) polynomial to s(x)/a(x) + t(x)/b(x) form
 * polyDiv.m - given a(x) & b(x), returns q(x) & r(x) which fulfil the equation a(x) = q(x) * b(x) + r(x)
+* secondOrderNonHom.m - numerically solve X''(t) = p(x) * X'(t) + q(x) * X(t) + r(t) with given boundary conditions
 * confCorr.m - calculates the confidence interval of the correlation coefficient
 * isGaussianLinear.m - tests a time series for gaussian (i.e - no skewness) and linear
 * kolmogorovSmirnov.m - perform the two-sample kolmogorov-smirnov goodnes of fit hypothesis test
