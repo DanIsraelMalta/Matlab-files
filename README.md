@@ -20,6 +20,7 @@
 * firWiener.m - design a finite impulse response wiener filter using levinson-durbin
 * levinsonDurbin.m - performs the levinson-durbin recrusion
 * kmeans.m - perform the k-means clustering algorithm (using euclidean distance)
+* chirpZ.m - perform the chirp z trnasform in a given frequency span
 * danGaussfir.m - returns the coeeficients of gaussian filter (good for pulse shaping)
 
 ###smoothers
