@@ -20,3 +20,5 @@
 * kmeans.m - perform the k-means clustering algorithm (using euclidean distance)
 * chirpZ.m - perform the chirp z trnasform in a given frequency span
 * danGaussfir.m - returns the coeeficients of gaussian filter (good for pulse shaping)
+* stepFinder.m - extracts a piecewise constant signal from a noisy observation
+                 using a maximum likelihood based penalization schema
