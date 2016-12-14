@@ -9,3 +9,5 @@
 * danImpulse.m - matlab's control toolbox 'impulse' function for non LTI objects
 * partial_fraction_expansion.m - find the residues, poles and direct term of a partial fraction expansion of a
                                  given set of zeros, poles and a gain.
+* secondDiscrete.m - calculates the damping and natural frequency of a discrete second order system, given desired change in
+                     magnitude and pahse.
