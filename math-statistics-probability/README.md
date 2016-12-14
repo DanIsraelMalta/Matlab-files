@@ -35,3 +35,4 @@
 * danDct.m -  performs the direct or inverse discrete cosine transform on a given array
 * invDet.m - calculate the power (of a given order) of the inverse determinant of of a symmetric (real or complex)
              positive definite matrix
+* int_diff.m - differentiates or integrates a signal, but in the frequency domain
