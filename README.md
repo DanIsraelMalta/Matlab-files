@@ -98,6 +98,7 @@
 * invDet.m - calculate the power (of a given order) of the inverse determinant of of a symmetric (real or complex)
              positive definite matrix* 
 * int_diff.m - differentiates or integrates a signal, but in the frequency domain
+* matSymmFac.m - performs a symmetric factorization of a square matrix
 
 ###general
 * runFunc.m - implements a general moving window inlined scalar function upon a given vector
