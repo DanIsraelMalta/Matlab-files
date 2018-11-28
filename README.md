@@ -1,6 +1,6 @@
-#Matlab files backup repository
+# Matlab files backup repository
 
-###estimation, processing & identification
+### estimation, processing & identification
 * TFidentify.m - identify a transfer function of a process (frequency domain method)
 * ARidentify.m - identify an autoregressive process (time domain method)
 * MAidentify.m - identify a moving-average process (time domain method)
@@ -25,7 +25,7 @@
 * stepFinder.m - extracts a piecewise constant signal from a noisy observation
                  using a maximum likelihood based penalization schema
 
-###smoothers
+### smoothers
 * bayesianSmooth.m - smooths an observation by minimizing a quadratic cost function using the bayesian approach
 * directSmooth.m - smooths an observation by minimizing a quadratic cost using the maximum likelihood approach
 * fftSmooth.m - smooths an observation by minimizing the general cross validation function, but in the frequency domain!
@@ -40,7 +40,7 @@
 * bandPass.m - perfect band pass filter
 * loess2D.m - 2D LOESS method smoothing
 
-###systems & simulation
+### systems & simulation
 * ODE87.m - 8'th order dorman prince explicit integrator
 * SDF.m - vairable-mass rigid-body six-degrees-of-freedom equation motion solver
 * danLinMod.m - linmod for any sort of non-simulink non-linear dynamic system
@@ -53,14 +53,14 @@
 * secondDiscrete.m - calculates the damping and natural frequency of a discrete second order system, given desired change 
                      in magnitude and pahse.
                      
-###curve fitting & regression
+### curve fitting & regression
 * optimalPoly.m - automatically find's a polynomial optimal degree (for polynomial fitting; maximum likelihood style)
 * orthogonalPolyFit.m - fit's an orthogonal polynomial (not linear least square polynomial)
 * loessFit.m - LOESS method regression
 * scatterReduction.m - scatterplot interpolant using grouped first order difference smoothing
 * danPchip.m - enhanced version of matlab's builtin function pchip.
 
-###math, statistics & probability
+### math, statistics & probability
 * nonLinSolve.m - solves a set of non-linear equations (gradient free)
 * isUnitCirclePolynomial.m - test if the roots of a given polynomial lie inside the unit circle
 * stabilizePoly.m - reflect polynomial unstable roots inside the unit circle (make a polynomial stable)
@@ -100,7 +100,7 @@
 * int_diff.m - differentiates or integrates a signal, but in the frequency domain
 * matSymmFac.m - performs a symmetric factorization of a square matrix
 
-###general
+### general
 * runFunc.m - implements a general moving window inlined scalar function upon a given vector
 * corrAlign.m - align two numeric vectors such that their inner product (correlation) is maximal
 * linDependent.m - finds linearly dependent columns in a given matrix
